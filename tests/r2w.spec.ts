@@ -36,7 +36,7 @@ test('Schjob', async () => {
 })
 
 test ('ldapc', async()=>{
-  //await ldapconfigure.ldapconnection();
+  await ldapconfigure.ldapconnection();
   await ldapconfigure.ldapconfirm();
 })
 
