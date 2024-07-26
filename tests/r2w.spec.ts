@@ -3,7 +3,6 @@ import { test, expect, chromium, Browser, Page } from '@playwright/test';
 import * as Interfaces from '../utils/interfaces';
 import * as Functions from '../utils/fileUtils';
 import { LoginPage } from '../pages/login.page';
-import { publicationProfile } from '../locators/locators'
 import { time } from 'console';
 import { Schedulerjobs } from '../pages/schedulerjobss.page';
 import {ldapconfig} from '../pages/ldapcon.page'
@@ -37,7 +36,8 @@ test('Schjob', async () => {
 })
 
 test ('ldapc', async()=>{
-  await ldapconfigure.ldapconnection();
+  //await ldapconfigure.ldapconnection();
+  await ldapconfigure.ldapconfirm();
 })
 
 

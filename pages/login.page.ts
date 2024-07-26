@@ -1,6 +1,6 @@
 import { Browser, chromium, Locator, Page } from '@playwright/test';
 import * as Locators from '../locators/locators';
-import { R2WPage } from './folderpublication.page';
+//import { R2WPage } from './folderpublication.page';
 import * as Interfaces from '../utils/interfaces';
 import * as Functions from '../utils/fileUtils';
 
