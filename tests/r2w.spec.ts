@@ -6,12 +6,14 @@ import { LoginPage } from '../pages/login.page';
 import { time } from 'console';
 import { Schedulerjobs } from '../pages/schedulerjobss.page';
 import {ldapconfig} from '../pages/ldapcon.page'
+import { foldermanagement } from '../pages/foldermng.page';
 
 let browser: Browser;
 let page: Page;
 let loginPage: LoginPage;
 let schedulerjobs: Schedulerjobs;
 let ldapconfigure : ldapconfig;
+let foldermodule : foldermanagement;
 
 test.beforeEach(async ({ playwright }) => {
 
@@ -20,7 +22,8 @@ test.beforeEach(async ({ playwright }) => {
   page = await browser.newPage();
   loginPage = new LoginPage(page);
   schedulerjobs = new Schedulerjobs(page);
-  ldapconfigure = new ldapconfig(page)
+  ldapconfigure = new ldapconfig(page);
+  foldermodule = new foldermanagement(page);
 
   const credentialsJson = '../test_data/credentials.json';
   const cred: Interfaces.Cred = Functions.readJsonFile<Interfaces.Cred>(credentialsJson);
@@ -40,4 +43,7 @@ test ('ldapc', async()=>{
   await ldapconfigure.ldapconfirm();
 })
 
+test ('foldermg', async() =>{
 
+
+})
