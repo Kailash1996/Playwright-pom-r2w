@@ -103,12 +103,14 @@ export const ldap = {
     catalogclick : 'xpath=//div[text() ="Catalogs"]',
     Contentframe: 'xpath=//iframe[@id = "main"]',
     addldap : 'xpath=//a[@Id ="addLdapLink"]',
-    ldapname : 'xpath=//input[@id="ldapName"]',
+    ldapname : 'xpath=//input[@name="ldapName"]',
     ldapurl : 'xpath=//input[@id="ldapUrl"]',
     ldapbasedn : 'xpath=//input[@id="ldapBaseDN"]',
     ldappass : 'xpath=//input[@id="ldapBindPassword"]',
     ldapbinddn : 'xpath=//input[@id="ldapBindDN"]',
-
+    testcon : 'xpath=//button[text() ="Test Connection"]',
+    savebutton : 'xpath=//button[text() ="Save"]',
+    ldapicon   : 'xpath=//a[text() ="Redwood masalan"]'
 
 
 } 
